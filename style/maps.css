@@ -48,7 +48,7 @@ body{
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
-    line-height: 20px;
+    line-height: 1vw;
     display: flex;
     align-items: center;
     text-align: end;
@@ -84,7 +84,7 @@ body{
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 36px;
     display: flex;
     align-items: center;
@@ -92,8 +92,8 @@ body{
 }
 
 #teyvat #bawah img{
-    width: 49px;
-    height: 49px;
+    width: 39px;
+    height: 39px;
 }
 
 #teyvat #bawah img:hover{
