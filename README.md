@@ -1,2 +1,2 @@
-# ProjectHCI 
-angki jelek
+# ProjectHCI
+angki kontol
