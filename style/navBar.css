@@ -91,6 +91,7 @@
 }
 
 #navMenus #registerImg{
+    scale: 0.84;
     display: inherit;
     margin-top: 9px;
     /* top: 100px; */
