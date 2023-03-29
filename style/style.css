@@ -17,7 +17,7 @@ body {
 }
 
 .jumbotron{
-    width: 100%;
+    width: 100vw;
     /* height: 53vw; */
     height: 100vh;
     /* height: 100%; */
