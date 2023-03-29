@@ -22,7 +22,7 @@ body{
 #teyvat{
     width: 100%;
     height: 100vh;
-    background-image: url("../assets/maps_Tevyat.png");
+    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)) ,url("../assets/maps_Tevyat.png");
     background-size: cover;
     /* position: relative; */
     display: flex;
@@ -124,7 +124,6 @@ body{
 .content img{
     /* position: relative; */
     width: 108px;
-    height: 126.75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -247,6 +246,12 @@ body{
     .mapLine{
         transform: scale(0.55);
     }
+    .content img{
+        scale: 0.5;
+    }
+    .content p{
+        width: 75%;
+    }
 }
 
 @media screen and (max-width: 406px) {
@@ -258,11 +263,39 @@ body{
 @media screen and (max-width: 390px) {
     .mapLine{
         transform: scale(0.35);
+    }   
+
+    .content{
+        gap: 0%
+    }
+    .content p{
+        scale: 0.7;
+    }
+
+    #tengah{
+        scale: 0.7;
+    }
+
+    #bawah{
+        scale: 0.7;
     }
 }
 
 @media screen and (max-width: 378px) {
     .mapLine{
         transform: scale(0);
+    }
+
+    #tengah{
+        scale: 0.5;
+    }
+
+    #bawah{
+        scale: 0.5;
+    }
+}
+@media screen and (max-height:600px){
+    .content p{
+        scale: 0.5;
     }
 }
