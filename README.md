@@ -1,2 +1,2 @@
 # ProjectHCI
-angki kontol
+HCI - Lab Project, "Jenshin IMpekZ"
