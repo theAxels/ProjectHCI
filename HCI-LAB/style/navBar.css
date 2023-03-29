@@ -1,0 +1,226 @@
+#nav{
+    /* width: 100vw; */
+    width: 100%;
+    /* height: 75px; */
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    /* padding: 18px 0px; */
+    display: flex;
+    background-color: black;
+    opacity: 57%;
+    justify-content: space-between;
+    z-index:1009;
+    /* overflow-x: scroll; */
+}
+
+#nav #logoImg{
+    position: absolute;
+}
+
+#navMenus{
+    display: flex;
+    list-style-type: none;
+    left: 55;
+    top: 0;
+    /* width: 60; */
+    /* height: 5; */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: end;
+    overflow: hidden;
+    gap: 10px;
+}
+
+#navMenuItems{
+    width: 100%;
+    height: 100%;
+}
+
+#navMenus li a{
+    font-size: 24px;
+    margin-top: 10px;
+    display: block;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+#navMenus span{
+    border-right: none;
+    width: 100%;
+    /* margin-top: 1px; */
+    /* text-align: center; */
+    align-items: center;
+    text-decoration: none;
+    display: block;
+}
+
+.menu{
+    position: relative;
+    padding: 10px 10px; 
+}
+
+.menu::before {
+    position: absolute;
+    width: 0;
+    height: 5px;
+    top: -16px;
+    left: 0;
+    content: "";
+    background-color: #69e0ff;
+    transition:0.2s ease;
+}
+
+.menu:hover::before{
+    width: 100%;
+}
+
+.menu.active::before{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -16px;
+    left: 0;
+    content: "";
+    background-color: #69e0ff;
+}
+
+#navMenus #registerImg{
+    display: inherit;
+    margin-top: 9px;
+    /* top: 100px; */
+}
+
+#HamburgerMenu{
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    color: #ffffff;
+    display: none;
+}
+
+#HamburgerMenu:hover{
+    filter: drop-shadow(0 0 5px rgb(89, 230, 255));
+}
+
+#xButton:hover{
+    filter: drop-shadow(0 0 5px rgb(89, 230, 255));
+}
+
+#HamMenu.active{
+    display: none;
+}
+
+#xButton.active{
+    display: block;
+}
+
+#navMenus li a:hover {
+    transition: all 0.2s ease-in-out;
+    /* border-top: 5px solid rgb(89, 230, 255); */
+    text-shadow: 0 0 5px rgb(89, 230, 255), 0 0 10px rgb(89, 230, 255), 0 0 15px rgb(89, 230, 255);
+}
+
+#navMenus a img:hover{
+    filter: drop-shadow(0 0 5px rgb(89, 230, 255));
+}
+
+#navMenus li a.active {
+    transition: all 0.2s ease-in-out;
+    /* border-top: 5px solid rgb(89, 230, 255); */
+    filter: drop-shadow(0 0 5px rgb(89, 230, 255));
+}
+
+#navMenus a.active{
+    filter: drop-shadow(0 0 5px rgb(89, 230, 255));
+}
+
+@media screen and (max-width: 1076px){
+    #navMenus{
+        display: grid;
+        position: absolute;
+        background-color: black;
+        /* width: 20%;
+        height: 50vw; */
+        width: 200px;
+        height: 600px;
+        top: 100%;
+        right: -100%;
+        z-index: -1;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .menu::before{
+        background-color: transparent;
+    }
+
+    .menu.active::before{
+        background-color: transparent;
+    }
+
+
+    #navMenus li a:hover {
+        /* border-top: none; */
+        border-left: 5px solid rgb(89, 230, 255);
+        filter: drop-shadow(0 0 5px rgb(89, 230, 255));
+    }
+
+    #navMenus li a.active {
+        right: 0;
+        /* border-top: none; */
+        border-left: 5px solid rgb(89, 230, 255);
+        filter: drop-shadow(0 0 5px rgb(89, 230, 255));
+    }
+
+    #HamburgerMenu{
+        display: flex;
+    }
+
+    #HamMenu{
+        display: block;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #xButton{
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #HamMenu.ON{
+        display: none;
+    }
+
+    #xButton.ON{
+        display:block;
+    }
+
+    #navMenus.ON{
+        right: 0px;
+    }
+}
+
+@media screen and (max-width: 584px) {
+    #nav{
+        background-color: transparent;
+
+    }
+
+    #nav #logoImg{
+        margin-top: 2vw;
+        margin-left: -10vw;
+        width: 40%;
+        height: auto;
+    }
+
+    #HamburgerMenu{
+        top: 0;
+        right: 2vw;
+        width: 6vw;
+        height: 6vw;
+    }
+}

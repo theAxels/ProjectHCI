@@ -1,0 +1,268 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.maps{
+    width: 100%;
+    /* height: 100%; */
+}
+
+#teyvat{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/maps_Tevyat.png");
+    background-size: cover;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#teyvat #tengah{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+#teyvat #tengah h1{
+    color: white;
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: end;
+}
+
+#teyvat #tengah p{
+    color: white;
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+    width: 40%;
+}
+
+#teyvat #bawah{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin-top: 600px;
+}
+
+#teyvat #bawah h5{
+    color: white;
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#teyvat #bawah img{
+    width: 49px;
+    height: 49px;
+}
+
+#teyvat #bawah img:hover{
+    filter: drop-shadow(0 0 5px rgb(89, 230, 255));
+}
+
+.region{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.content img{
+    /* position: relative; */
+    width: 108px;
+    height: 126.75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h1{
+    color: white;
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4vw;
+    line-height: 20px;
+    display: flex;
+    align-items: end;
+    text-align: center;
+}
+
+.content p{
+    color: white;
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+    width: 30%;
+}
+
+.mapLine{
+    margin-right: 2vw;
+    position: fixed;
+    /* width: 201.13px; */
+    width: 181.13px;
+    height: 426px;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease ease-in-out;
+    /* z-index: 999; */
+    /* border: solid red; */
+    top: 30%;
+}
+
+.mapLine #line{
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: right;
+    align-items: end;
+}
+
+.mapLine #list{
+    width: 130px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.35%;
+}
+
+.mapLine #list a{
+    width: 130px;
+    display: block;
+    justify-content: left;
+    text-decoration: none;
+    text-align: right;
+    font-size: 22px;
+    color: white;
+    /* color: black; */
+}
+
+.mapLine #list .active{
+    color: black;
+    background-color: white;
+}
+
+.maps #Mondstadt{
+    background-image: url("../assets/maps_Monstrad.jpg");
+}
+
+.maps #Liyue{
+    background-image: url("../assets/maps_Liyue.jpg");
+}
+
+.maps #Inazuma{
+    background-image: url("../assets/maps_Inazuma.jpg");
+}
+
+.maps #Sumeru{
+    background-image: url("../assets/maps_Sumeru.jpg");
+}
+
+@media screen and (max-width: 550px) {
+    .mapLine{
+        transform: scale(0.85);
+    }
+}
+
+@media screen and (max-width: 518px) {
+    .mapLine{
+        transform: scale(0.7);
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .mapLine{
+        transform: scale(0.65);
+    }
+}
+
+@media screen and (max-width: 451px) {
+    .mapLine{
+        transform: scale(0.55);
+    }
+}
+
+@media screen and (max-width: 406px) {
+    .mapLine{
+        transform: scale(0.45);
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .mapLine{
+        transform: scale(0.35);
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .mapLine{
+        transform: scale(0);
+    }
+}

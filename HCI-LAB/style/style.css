@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Unlock&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    /* width: 100%; */
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.jumbotron{
+    width: 100%;
+    /* height: 53vw; */
+    height: 100vh;
+    /* height: 100%; */
+    /* position: absolute; */
+    /* display: block; */
+    background-image: url("../assets/home1.gif"); 
+    background-size: cover;
+}
+
+#jumbotron1{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#jumbotron1 h1{
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.6vw;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.atas{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+    gap: 5%;
+    width: 100%;
+    height: 100%;
+    /* height: 15%00%; */
+}
+
+.atas h1{
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    /* align-items: end; */
+}
+
+#downloadButton{
+    display: none;
+    justify-content: center;
+}
+
+#downloadButton img{
+    opacity: 57%;
+    transition: all 0.3s ease-in-out;
+}
+
+#downloadButton img:hover{
+    opacity: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons{
+    border: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    gap: 2%;
+}
+
+.buttons img{
+    /* width: 100%;
+    height: 20%; */
+    opacity: 57%;
+    transition: all 0.3s ease-in-out;
+}
+
+.buttons img:hover{
+    opacity: 100%;
+}
+
+#jumbotron1 #Arrow img{
+    width: 2vw;
+    height: 2vw;
+    margin-bottom: 2vw;
+}
+
+#jumbotron1 #Arrow img:hover{
+    filter: drop-shadow(0 0 5px rgb(89, 230, 255));
+}
+
+.newCharacters{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vw;
+    background-image: url("../assets/bgNewCharcters.jpg");
+    background-size: cover;
+    gap: 3%;
+    /* position: relative; */
+}
+
+#NCjudul{
+    /* margin-left: 50px;
+    margin-top: 50px; */
+    width: 100%;
+    height: 8%;
+}
+
+#NCjudul img{
+    width: 32%;
+    height: 100%;
+}
+
+#NCjudul h1{
+    font-family: 'Unlock' , cursive;
+    font-size: 3vw;
+    line-height: 2vw;
+    color: #DE7E18;
+}
+
+#content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+}
+
+#content img{
+    /* margin-right: 50px; */
+    width: 90%;
+    height: 60%;
+}
+
+#content p{
+    font-family: 'Tahoma';
+    font-size: 1.5vw;
+    width: 70%;
+    height: 100%;
+    text-align: left;
+    margin-left: 10%;
+    color: white;
+    position: absolute;
+    /* margin-top: 83px; */
+}
+
+.elementWrapper{
+    margin-top: 40%;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    left: 0;
+    position: absolute;
+    flex-wrap: wrap;
+    /* margin-top: 340px; */
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.elementWrapper p{
+    margin-top: -14%;
+    width: 50%;
+    height: 60%;
+    font-size: 1.5vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newWeapon{
+    /* padding: 20px 20px; */
+    width: 100%;
+    height: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: url("../assets/NewWeaponBg.jpg");
+    background-size: cover;
+}
+
+#NWPic{
+    /* margin-top: 200px; */
+    /* width: 50%; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+#NWPic img{
+    justify-content: center;
+    margin-left: 15%;
+    width: 100%;
+    height: 50%;
+}
+
+#NWcontent{
+    /* margin-top: 200px; */
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    justify-content: left;
+    /* width: 68vw; */
+    width: 100%;
+    height: 100%;
+}
+
+#NWcontent img{
+    position: absolute;
+    width: 50%; 
+    height: 18%;
+}
+
+#kananAtas{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;    
+    /* align-items: center; */
+}
+
+#kananAtas img{
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5%;
+    /* align-items: center; */
+}
+
+#kananAtas h1{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    font-family: 'Unlock' , cursive;
+    font-size: 3vw;
+    line-height: 51px;
+    margin-left: 7%;
+    margin-bottom: 8.5%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+#NwDesc{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+#NwDesc img{
+    /* margin-top: 148px; */
+    position: absolute;
+    width: 90%;
+    /* margin-left: 10%; */
+    height: 100%;
+}
+
+#NwDesc p{
+    display: flex;
+    justify-content: baseline;
+    flex-direction: column;
+    /* margin-top: 180px;
+    margin-left: 50px; */
+    /* text-align: center; */
+    position: absolute;
+    /* padding: 3%; */
+    margin-top: 6%;
+    margin-left: 4.5%;
+    font-family: 'Tahoma';
+    font-size: 1.5vw;
+    line-height: 2vw;
+    width: 80%;
+    height: 100%;
+} 
+
+#StatBar{
+    /* margin-top: 500px; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#StatBar img{
+    display: flex;
+    justify-content: baseline;
+    width: 90%;
+    height: 40%;
+}
+
+@media screen and (max-width: 1076px) {
+    .buttons{
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .atas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #downloadButton{
+        display:flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    #downloadButton img{
+        width: 30vw;
+        height: 10vw;
+    }
+
+    
+    #NCjudul img{
+        width: 40%;
+        height: 100%;
+    }
+
+    #content img{
+        width: 95%;
+        height: 55%;
+    }
+
+    .elementWrapper p{
+        margin-top: -17%;
+        width: 45%;
+        height: 55%;
+    }
+
+    #NWPic img{
+        justify-content: center;
+        margin-left: 16%;
+        width: 105%;
+        height: 45%;
+    }
+    
+    #kananAtas img{
+        width: 95%;
+    }
+    
+    #kananAtas h1{
+        margin-bottom: 6.5%;
+    }
+
+    #NwDesc p{
+        margin-left: 6.5%;
+        font-family: 'Tahoma';
+        font-size: 1.8vw;
+    } 
+    
+    #StatBar img{
+        margin-left: 3%;
+        display: flex;
+        justify-content: baseline;
+        width: 85%;
+        height: 35%;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    #kananAtas h1{
+        margin-bottom: 2.8%;
+    }
+}
+
+@media screen and (max-width: 478px){
+    #kananAtas h1{
+        margin-bottom: 1.2%;
+    }
+}
+
+@media screen and (max-width: 399px){
+    #kananAtas h1{
+        margin-bottom: -2%;
+    }
+}
+
+@media screen and (max-width: 335px){
+    #kananAtas h1{
+        margin-bottom: -4%;
+    }
+}
+
+@media screen and (max-width: 291px){
+    #kananAtas h1{
+        margin-bottom: -6%;
+    }
+}
+
+@media screen and (max-width: 265px){
+    #kananAtas h1{
+        margin-bottom: -8%;
+    }
+}

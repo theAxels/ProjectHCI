@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Game</title>
+    <link rel="stylesheet" href="../style/navBar.css">
+    <link rel="stylesheet" href="../style/about.css">
+    <link rel="stylesheet" href="../style/slider.css">
+    <link rel="stylesheet" href="../style/goToTop.css">
+    <link rel="stylesheet" href="../style/footer.css">
+</head>
+<body>
+    <div id="nav">
+        <img id="logoImg" src="../assets/logo.png" width="320" height="66">
+        <div id="HamburgerMenu">
+          <svg id="xButton" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+          <svg id="HamMenu" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </div>
+        <ul id="navMenus">
+            <li><a class="menu" href="index.html">Home</a></li>
+            <li><a class="menu" href="characters.html">Characters</a></li>
+            <li><a class="menu" href="maps.html">Maps</a></li>
+            <li><a class="menu active" href="about.html">About</a></li>
+            <a href="registration.html"> <img id="registerImg" src="../assets/RegisterNavBar.png" width="169.6px"></a>
+        </ul>
+      </div>
+    <div id="jumbotron">
+      <div id="AvailableDiv">
+        <img id="Available" src="../assets/AvailableText.png" alt="">
+      </div>
+      
+      <a href="#info" id="Arrow"><img src="../assets/downArrow.png" alt=""></a>
+    </div>
+    <div class="info" id="info">
+        <div id="info-tittle">
+          <img src="../assets/left.png" alt="">
+          <h1>Game Features</h1>
+          <img src="../assets/right.png" alt="">
+        </div>
+        <div class="info-content1">
+            <img src="../assets/fiturGame1Bg.png" alt="">
+            <div class="descR">
+                <div class="tittle">
+                    <h1>An Epic Fantasy Adventure</h1>
+                </div>
+                <div class="text">
+                    <p>Experience an immersive single-player campaign. As a traveler from another world, you will embark on a journey to reunite with your long-lost sibling and unravel the mysteries of Teyvat, and yourself.</p>
+                </div>
+            </div>
+        </div>
+        <div class="info-content2">
+          <img src="../assets/FiturGame2Bg.png" alt="">
+          <div class="descL">
+            <div class="tittle">
+              <h1>Your World to Discover</h1>
+            </div>
+            <div class="text">
+              <p>Fly across the open world, swim through crystal-clear waters, and climb towering mountains. Stray off the beaten path to discover all the hidden secrets of a world full of wonder and mystery.</p>
+            </div>
+          </div>
+        </div>
+        <div class="info-content3">
+          <img src="../assets/FiturGame3Bg.png" alt="">
+          <div class="descR">
+            <div class="tittle">
+              <h1>Travel Alone or Battle Together</h1>
+            </div>
+            <div class="text">
+              <p>Charge head-on into battles solo, or invite friends to join the fight against dangerous monsters with 4-player cross-play for PS4, iOS, Android, and PC.</p>
+            </div>
+        </div>
+      </div>
+      <div class="info-content4">
+        <img src="../assets/FiturGame4Bg.png" alt="">
+        <div class="descL">
+          <div class="tittle">
+            <h1>Master the Seven Elements</h1>
+          </div>
+          <div class="text">
+            <p>Not just another mindless hack and slash. Manipulating the various elements is the key to defeating powerful enemies and solving challenging puzzles.</p>
+          </div>
+        </div>
+      </div>
+      <div id="info-ss">
+        <img src="../assets/left.png" alt="">
+        <h1>Game Screenshots</h1>
+        <img src="../assets/right.png" alt="">
+      </div>
+      <div class="container">
+        <div class="slider">
+            <div class="slides">
+              <!-- <div class="numbertext">1/4</div> -->
+              <img src="../assets/fiturGame1Bg.png" alt="">
+            </div>
+            <div class="slides">
+              <!-- <div class="numbertext">2/4</div> -->
+              <img src="../assets/fiturGame2Bg.png" alt="">
+            </div>
+            <div class="slides">
+              <!-- <div class="numbertext">3/4</div> -->
+              <img src="../assets/fiturGame3Bg.png" alt="">
+            </div>
+            <div class="slides">
+              <!-- <div class="numbertext">4/4</div> -->
+              <img src="../assets/fiturGame4Bg.png" alt="">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)"><img src="../assets/prev.png" alt=""></a>
+            <a class="next" onclick="plusSlides(1)"><img src="../assets/next.png" alt=""></a>
+        </div>
+        <br>
+        <div id = "navDot" style="text-align: center">
+            <span class="dot" onclick="currentSlides(1)"></span>
+            <span class="dot" onclick="currentSlides(2)"></span>
+            <span class="dot" onclick="currentSlides(3)"></span>
+            <span class="dot" onclick="currentSlides(4)"></span>
+        </div>
+      </div>
+      <div class="download">
+        <div class="down-content">
+          <div class="textHeader">
+            <img id="logoAbout" src="../assets/logo.png" alt="">
+            <img id="letsgo" src="../assets/letsgoonanadventureAbout.png" alt="">
+            <h1>Multiple Platforms for Your Journey</h1>
+          </div>
+          <div class="button">
+            <div id="large">
+              <img src="../assets/PS554About.png" alt="" width="273px">
+            </div>
+            <div id="small">
+              <img src="../assets/AppleAbout.png" alt="">
+              <img src="../assets/AndroidAbout.png" alt="">
+              <img src="../assets/windowsAbout.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <button onclick="topFunction()" id="GoTopBtn" title="Go to top">	&#8593</button>
+    </div>
+      <footer id="footer">
+        <div>
+          <img src="../assets/logo.png">
+        </div>
+        <ul id="footerMenu">
+          <li><a href="#privacypoplicy">Privacy Policy</a></li>
+          <li><a href="#termofservice">Terms of Service</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+        <div>
+            <img src="../assets/home2.png">
+        </div>
+        <div>
+            <p id="long">
+                "PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.
+
+Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of their respective owners.
+            </p>
+        </div>
+        <div>
+          <img src="../assets/loyoverse.png">
+        </div>
+        <div>
+          <p>
+            Copyright © ATMOSPHERE. All Rights Reserverd. 
+          </p>
+        </div>
+      </footer>
+</body>
+<script src="../js/navBar.js"></script>
+<script src="../js/slider.js"></script>
+<script src="../js/goToTop.js"></script>
+</html>

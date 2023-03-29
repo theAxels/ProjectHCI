@@ -1,0 +1,23 @@
+#GoTopBtn {
+    width: 55px;
+    height: 55px;
+    font-size: 30px;
+    display: none;
+    /* display: block; */
+    position: fixed; 
+    bottom: 30px; 
+    right: 40px; 
+    z-index: 999; 
+    border: none; 
+    outline: none; 
+    background-color: white; 
+    color: #484848;
+    cursor: pointer; 
+    padding: 2px 7px; 
+    border-radius: 100%;
+}
+  
+#GoTopBtn:hover {
+background-color: #484848; 
+color: white;
+}

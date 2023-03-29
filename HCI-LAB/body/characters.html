@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters</title>
+    <link rel="stylesheet" href="../style/navBar.css">
+    <link rel="stylesheet" href="../style/characters.css">
+    <link rel="stylesheet" href="../style/goToTop.css">
+    <link rel="stylesheet" href="../style/footer.css">
+</head>
+<body>
+    <div id="nav">
+        <img id="logoImg" src="../assets/logo.png" width="320" height="66">
+        <div id="HamburgerMenu">
+          <svg id="xButton" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+          <svg id="HamMenu" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </div>
+        <ul id="navMenus">
+            <li><a class="menu" href="index.html">Home</a></li>
+            <li><a class="menu active" href="characters.html">Characters</a></li>
+            <li><a class="menu" href="maps.html">Maps</a></li>
+            <li><a class="menu" href="about.html">About</a></li>
+            <a href="registration.html"> <img id="registerImg" src="../assets/RegisterNavBar.png" width="169.6px"></a>
+        </ul>
+      </div>
+      <div class="maps">
+        <div class="region" id="Mondstadt">
+            <div class="content">
+                <div class="Picture">
+                    <img class="pic bfr" id="before" src="../assets/Chara/monstrad/Monstrad_3.png" alt="">
+                    <img class="pic curr ON" id="current" src="../assets/Chara/monstrad/Monstrad_1.png" alt="">
+                    <img class="pic afr" id="after" src="../assets/Chara/monstrad/Monstrad_2.png" alt="">
+                </div>
+                <div class="profile">
+                    <h1 id="name">JEAN</h1>
+                    <div class="dsc" id="desc">
+                        <p>As the Acting Grand Master of the Knights, Jean has always been devoted to her duties and maintaining peace in Mondstadt.
+                            She had taken precautions long before the onset of Stormterror's assault, and she will guard Mondstadt with her life as always.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="crd cards active" id="card1">
+                        <img id="pp" src="../assets/Chara/monstrad/Jean_Frame.png" alt="">
+                        <div class="tekssss">
+                            <h2>Jean</h2>
+                        </div>
+                    </div>
+                    <div class="crd cards" id="card2">
+                        <img id="pp" src="../assets/Chara/monstrad/Mona_2.png" alt="">
+                        <div class="tekssss">
+                            <h2>Mona</h2>
+                        </div>
+                    </div>
+                    <div class="crd cards" id="card3">
+                        <img id="pp" src="../assets/Chara/monstrad/Eula3.png" alt="">
+                        <div class="tekssss">
+                            <h2>Eula</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mapLine">
+                <div id="line">
+                    <img src="../assets/Line.png" alt="">
+                </div>
+                <div id="list">
+                    <a onclick="currentSlides(1)" class="active" href="#Mondstadt" >Mondstadt</a>
+                    <a onclick="currentSlides(2)" href="#Liyue">Liyue</a>
+                    <a onclick="currentSlides(3)" href="#Inazuma">Inazuma</a>
+                    <a onclick="currentSlides(4)" href="#Sumeru">Sumeru</a>
+                </div>
+            </div>
+        </div>
+        <div class="region" id="Liyue">
+            <div class="content">
+                <div class="Picture">
+                    <img class="pic1 bfr" id="before2" src="../assets/Chara/Liyue/Liyue3.png" alt="">
+                    <img class="pic1 curr ON" id="current2" src="../assets/Chara/Liyue/Liyue1.png" alt="">
+                    <img class="pic1 afr" id="after2" src="../assets/Chara/Liyue/Liyue2.png" alt="">
+                </div>
+                <div class="profile">
+                    <h1 id="name2">HUTAO</h1>
+                    <div class="dsc" id="desc2">
+                        <p>Hu Tao is the 77th Director of the Wangsheng Funeral Parlor, a person vital to managing Liyue's funerary affairs. She does her utmost to flawlessly carry out a person's last rites and preserve the world's balance of yin and yang.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="crd cards2 active" id="card21">
+                        <img id="pp" src="../assets/Chara/Liyue/Hutau1.png" alt="">
+                        <div class="tekssss">
+                            <h2>Hutao</h2>
+                        </div>
+                    </div>
+                    <div class="crd cards2" id="card22">
+                        <img id="pp" src="../assets/Chara/Liyue/Keqing2.png" alt="">
+                        <div class="tekssss">
+                            <h2>Keqing</h2>
+                        </div>
+                    </div>
+                    <div class="crd cards2" id="card23">
+                        <img id="pp" src="../assets/Chara/Liyue/Beidou3.png" alt="">
+                        <div class="tekssss">
+                            <h2>Beidou</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mapLine">
+                <div id="line">
+                    <img src="../assets/Line2.png" alt="">
+                </div>
+                <div id="list">
+                    <a onclick="currentSlides(1)" href="#Mondstadt">Mondstadt</a>
+                    <a onclick="currentSlides(2)"class="active" href="#Liyue">Liyue</a>
+                    <a onclick="currentSlides(3)" href="#Inazuma">Inazuma</a>
+                    <a onclick="currentSlides(4)" href="#Sumeru">Sumeru</a>
+                </div>
+            </div>
+        </div>
+        <div class="region" id="Inazuma">
+            <div class="content">
+                <div class="Picture">
+                    <img class="pic2 bfr" id="before3" src="../assets/Chara/Inazuma/inazuma3.png" alt="">
+                    <img class="pic2 curr ON" id="current3" src="../assets/Chara/Inazuma/inazuma1.png" alt="">
+                    <img class="pic2 afr" id="after3" src="../assets/Chara/Inazuma/inazuma2.png" alt="">
+                </div>
+                <div class="profile">
+                    <h1 id="name3">KAMISATO AYAKA</h1>
+                    <div class="dsc" id="desc3">
+                        <p>Daughter of the Yashiro Commission's Kamisato Clan from Inazuma. Dignified and elegant, wise and determined. Sincere and pleasant to others. Universally loved by the Inazuma people, she has earned the title of Shirasagi Himegimi.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="crd cards3 active" id="card31">
+                        <img id="pp" src="../assets/Chara/Inazuma/ayaka1.png" alt="">
+                        <div class="tekssss">
+                            <h2>Kamisato Ayaka</h2>
+                        </div>
+                    </div>
+                    <div class="crd cards3" id="card32">
+                        <img id="pp" src="../assets/Chara/Inazuma/shogun2.png" alt="">
+                        <div class="tekssss">
+                            <h2>Raiden Shogun</h2>
+                        </div>
+                    </div>
+                    <div class="crd cards3" id="card33">
+                        <img id="pp" src="../assets/Chara/Inazuma/yoimiya3.png" alt="">
+                        <div class="tekssss">
+                            <h2>Yoimiya</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mapLine">
+                <div id="line">
+                    <img src="../assets/Line3.png" alt="">
+                </div>
+                <div id="list">
+                    <a onclick="currentSlides(1)"  href="#Mondstadt">Mondstadt</a>
+                    <a onclick="currentSlides(2)" href="#Liyue">Liyue</a>
+                    <a onclick="currentSlides(3)" class="active" href="#Inazuma">Inazuma</a>
+                    <a onclick="currentSlides(4)" href="#Sumeru">Sumeru</a>
+                </div>
+            </div>
+        </div>
+        <div class="region" id="Sumeru">
+            <div class="content">
+                <div class="Picture">
+                    <img class="pic3 bfr" id="before4" src="../assets/Chara/Sumeru/sumeru3.png" alt="">
+                    <img class="pic3 curr ON" id="current4" src="../assets/Chara/Sumeru/sumeru1.png" alt="">
+                    <img class="pic3 afr" id="after4" src="../assets/Chara/Sumeru/sumeru2.png" alt="">
+                </div>
+                <div class="profile">
+                    <h1 id="name4">CANDACE</h1>
+                    <div class="dsc" id="desc4">
+                        <p>The guardian of Aaru Village who is gentle and benevolent. She will not allow anyone to harm Aaru Village under her watch.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="crd cards4 active" id="card41">
+                        <img id="pp" src="../assets/Chara/Sumeru/candace1.png" alt="">
+                        <div class="tekssss">
+                            <h2>Candace</h2>
+                        </div>
+                    </div>
+                    <div class="crd cards4" id="card42">
+                        <img id="pp" src="../assets/Chara/Sumeru/nahida2.png" alt="">
+                        <div class="tekssss">
+                            <h2>Nahida</h2>
+                        </div>
+                    </div>
+                    <div class="crd cards4" id="card43">
+                        <img id="pp" src="../assets/Chara/Sumeru/dehya3.png" alt="">
+                        <div class="tekssss">
+                            <h2>Dehya</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mapLine">
+                <div id="line">
+                    <img src="../assets/Line4.png" alt="">
+                </div>
+                <div id="list">
+                    <a onclick="currentSlides(1)" href="#Mondstadt">Mondstadt</a>
+                    <a onclick="currentSlides(2)" href="#Liyue">Liyue</a>
+                    <a onclick="currentSlides(3)" href="#Inazuma">Inazuma</a>
+                    <a onclick="currentSlides(4)" class="active" href="#Sumeru">Sumeru</a>
+                </div>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="GoTopBtn" title="Go to top">	&#8593</button>
+      </div>
+    <footer id="footer">
+        <div>
+          <img src="../assets/logo.png">
+        </div>
+        <ul id="footerMenu">
+          <li><a href="#privacypoplicy">Privacy Policy</a></li>
+          <li><a href="#termofservice">Terms of Service</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+        <div>
+            <img src="../assets/home2.png">
+        </div>
+        <div>
+            <p id="long">
+                "PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.
+
+Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of their respective owners.
+            </p>
+        </div>
+        <div>
+          <img src="../assets/loyoverse.png">
+        </div>
+        <div>
+          <p>
+            Copyright © ATMOSPHERE. All Rights Reserverd. 
+          </p>
+        </div>
+    </footer>
+</body>
+<script src="../js/navBar.js"></script>
+<script src="../js/goToTop.js"></script>
+<script src="../js/characters.js"></script>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../style/navBar.css">
+    <link rel="stylesheet" href="../style/registration.css">
+    <link rel="stylesheet" href="../style/goToTop.css">
+    <link rel="stylesheet" href="../style/footer.css">
+</head>
+<body>
+    <div id="nav">
+        <img id="logoImg" src="../assets/logo.png" width="320" height="66">
+        <div id="HamburgerMenu">
+          <svg id="xButton" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+          <svg id="HamMenu" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+        </div>
+        <ul id="navMenus">
+            <li><a class="menu" href="index.html">Home</a></li>
+            <li><a class="menu" href="characters.html">Characters</a></li>
+            <li><a class="menu" href="maps.html">Maps</a></li>
+            <li><a class="menu" href="about.html">About</a></li>
+            <a class="active" " href="registration.html"> <img id="registerImg" src="../assets/RegisterNavBar.png" width="169.6px"></a>
+        </ul>
+      </div>
+    <div class="jumbotron">
+        <div class="popup">
+            <div class="container">
+                <div id="logo">
+                    <img src="../assets/loyoverse.png" alt="" width="341px" height="61px">
+                </div>
+                
+                <div class="form">
+                    <div id="closeButton">
+                        <img src="../assets/close.png" alt="">
+                    </div>
+                    <div class="formElement">
+                        <h1>Register by Email</h1>
+                        <div class="form-element">
+                            <input type="text" name="inputName" id="name" placeholder="Name">
+                        </div>
+                        <div class="Err" id="divError1"></div>
+                        <div class="form-element">
+                            <input type="number" name="inputAge" id="age" placeholder="Age">
+                        </div>
+                        <div class="Err" id="divError2"></div>
+                        <div class="form-element">
+                            <input type="text" name="inputEmail" id="email" placeholder="Email">
+                        </div>
+                        <div class="Err" id="divError3"></div>
+                        <div class="form-element">
+                            <input type="password" name="inputPassword" id="password" placeholder="Password" value="">
+                        </div>
+                        <div class="Err" id="divError4"></div>
+                        <div class="form-element">
+                            <input type="password" name="inputConfirm" id="confirmPassword" placeholder="Confirm Password">
+                        </div>
+                        <div class="Err" id="divError5"></div>
+                        <div class="form-element">
+                            <input type="checkbox" name="inputCekBox" id="term">
+                            <label for="term">I have read and agree to the Terms of Service & Privacy Policy</label>
+                        </div>
+                        <div class="Err" id="divError"></div>
+                        <div class="form-element">
+                            <button id="btnRegister">Register</button>
+                        </div>
+                    </div>
+                    <div class="successElement">
+                        <div class="success" id="element1">
+                            <img src="../assets/success.png" alt="">
+                        </div>
+                        <div class="success" id="element2">
+                            <h1>Registration Success</h1>
+                        </div>
+                        <div class="success"  id="element3">
+                            <h3>welcome to</h3>
+                        </div>
+                        <div class="success"  id="element4">
+                            <img src="../assets/loyoverse.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <img src="../assets/register.png" alt="">
+        </div>
+        <div class="center">
+            <button id="show-register">Register</button>
+        </div>
+        <button onclick="topFunction()" id="GoTopBtn" title="Go to top">	&#8593</button>
+    </div>
+    <footer id="footer">
+        <div>
+          <img src="../assets/logo.png">
+        </div>
+        <ul id="footerMenu">
+          <li><a href="#privacypoplicy">Privacy Policy</a></li>
+          <li><a href="#termofservice">Terms of Service</a></li>
+          <li><a href="#aboutus">About Us</a></li>
+          <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+        <div>
+            <img src="../assets/home2.png">
+        </div>
+        <div>
+            <p id="long">
+                "PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.
+
+Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of their respective owners.
+            </p>
+        </div>
+        <div>
+          <img src="../assets/loyoverse.png">
+        </div>
+        <div>
+          <p>
+            Copyright © ATMOSPHERE. All Rights Reserverd. 
+          </p>
+        </div>
+    </footer>
+</body>
+<script src="../js/navBar.js"></script>
+<script src="../js/goToTop.js"></script>
+<script src="../js/registeration.js"></script>
+</html>
+    
