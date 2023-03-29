@@ -48,7 +48,7 @@ body{
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
-    line-height: 1vw;
+    line-height: 20px;
     display: flex;
     align-items: center;
     text-align: end;
@@ -59,8 +59,8 @@ body{
     font-family: 'Tahoma';
     font-style: normal;
     font-weight: 400;
-    font-size: 0.8vw;
-    line-height: 1vw;
+    font-size: 18px;
+    line-height: 20px;
     display: flex;
     align-items: baseline;
     text-align: center;
